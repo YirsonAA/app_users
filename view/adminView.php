@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once "../config.php";
-//Si no existe la sesion del usuario no existe regresamos al login
+
 if(isset($_SESSION["name"])==false){
     //Redireccionamos hacia dashboard
     header("Location: ../view/loginView.php");
