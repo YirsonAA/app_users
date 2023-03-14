@@ -72,7 +72,6 @@ function listaUsuariosApi(){
   $final_decoded_data = json_decode($resp,true);
   //print_r($final_decoded_data);
   foreach($final_decoded_data["data"] as $key => $val){
-    echo $val["first_name"] . $val["last_name"];
     echo "<tr>";
     echo "<td>".$val["id"]."</td>";
     echo "<td>".$val["first_name"] ." ". $val["last_name"]."</td>";
